@@ -1,0 +1,12 @@
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.deps.json
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\bin\Debug\netcoreapp5.0\ref\PSK.SmartGarden.Dto.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.pdb
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.csprojAssemblyReference.cache
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.AssemblyInfoInputs.cache
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.AssemblyInfo.cs
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.csproj.CoreCompileInputs.cache
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\ref\PSK.SmartGarden.Dto.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Dto\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.pdb

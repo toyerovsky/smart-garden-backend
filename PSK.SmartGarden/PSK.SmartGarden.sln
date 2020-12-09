@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.SmartGarden", "PSK.SmartGarden.csproj", "{55A40ECA-DBDE-4050-85C1-4E804B74EA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.SmartGarden.Application", "..\PSK.SmartGarden.Application\PSK.SmartGarden.Application.csproj", "{16AAAB1E-DB37-42B8-AF71-282304159D24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.SmartGarden.Data", "..\PSK.SmartGarden.Data\PSK.SmartGarden.Data.csproj", "{642EDD70-2B01-4D12-AD18-9C0A6242F231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.SmartGarden.MQTTService", "..\PSK.SmartGarden.MQTTService\PSK.SmartGarden.MQTTService.csproj", "{CCB01DDB-51C5-48FC-8C9A-9F6F241AB5EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.SmartGarden.Dto", "..\PSK.SmartGarden.Dto\PSK.SmartGarden.Dto.csproj", "{CED7ECEA-D71F-4EB6-92AB-44A7C72DBE13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55A40ECA-DBDE-4050-85C1-4E804B74EA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A40ECA-DBDE-4050-85C1-4E804B74EA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A40ECA-DBDE-4050-85C1-4E804B74EA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A40ECA-DBDE-4050-85C1-4E804B74EA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16AAAB1E-DB37-42B8-AF71-282304159D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16AAAB1E-DB37-42B8-AF71-282304159D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16AAAB1E-DB37-42B8-AF71-282304159D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16AAAB1E-DB37-42B8-AF71-282304159D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642EDD70-2B01-4D12-AD18-9C0A6242F231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642EDD70-2B01-4D12-AD18-9C0A6242F231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642EDD70-2B01-4D12-AD18-9C0A6242F231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642EDD70-2B01-4D12-AD18-9C0A6242F231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB01DDB-51C5-48FC-8C9A-9F6F241AB5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB01DDB-51C5-48FC-8C9A-9F6F241AB5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB01DDB-51C5-48FC-8C9A-9F6F241AB5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB01DDB-51C5-48FC-8C9A-9F6F241AB5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED7ECEA-D71F-4EB6-92AB-44A7C72DBE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED7ECEA-D71F-4EB6-92AB-44A7C72DBE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED7ECEA-D71F-4EB6-92AB-44A7C72DBE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED7ECEA-D71F-4EB6-92AB-44A7C72DBE13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

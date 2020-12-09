@@ -1,0 +1,17 @@
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Application.deps.json
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Application.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\ref\PSK.SmartGarden.Application.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Application.pdb
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.csprojAssemblyReference.cache
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.AssemblyInfoInputs.cache
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.AssemblyInfo.cs
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.csproj.CoreCompileInputs.cache
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\ref\PSK.SmartGarden.Application.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.pdb
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Data.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Data.pdb
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.pdb
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.csproj.CopyComplete
