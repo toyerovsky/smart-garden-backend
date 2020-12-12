@@ -15,3 +15,5 @@ C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\
 C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Data.pdb
 C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\PSK.SmartGarden.Dto.pdb
 C:\job\smart-garden-backend\PSK.SmartGarden.Application\obj\Debug\netcoreapp5.0\PSK.SmartGarden.Application.csproj.CopyComplete
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\job\smart-garden-backend\PSK.SmartGarden.Application\bin\Debug\netcoreapp5.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml

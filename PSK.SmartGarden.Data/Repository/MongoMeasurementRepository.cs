@@ -18,23 +18,32 @@ namespace PSK.SmartGarden.Data.Repository
             _measurements = database.GetCollection<MeasurementEntity>(settings.MeasurementsCollectionName);
         }
 
-        public IList<MeasurementEntity> GetMeasurementList(GetMeasurementListInput input)
+        public IList<MeasurementEntity> GetMeasurementList(GetMeasurementListInput input, out long totalCount)
         {
             FilterDefinition<MeasurementEntity> filter = FilterDefinition<MeasurementEntity>.Empty;
 
             if (input.From.HasValue)
             {
-                filter = Builders<MeasurementEntity>.Filter.Gte(x => x.Date, input.From);
+                filter = Builders<MeasurementEntity>.Filter.And(filter,
+                    Builders<MeasurementEntity>.Filter.Gte(x => x.Date, input.From));
             }
 
             if (input.To.HasValue)
             {
-                filter = Builders<MeasurementEntity>.Filter.Lte(x => x.Date, input.To);
+                filter = Builders<MeasurementEntity>.Filter.And(filter,
+                    Builders<MeasurementEntity>.Filter.Lte(x => x.Date, input.To));
             }
 
-            var cursor = _measurements.Find(filter)
-                .Skip((input.PageNumber - 1) * input.PageSize)
-                .Limit(input.PageSize);
+            var cursor = _measurements.Find(filter);
+
+            totalCount = cursor.CountDocuments();
+
+            if (input.PageNumber.HasValue && input.PageSize.HasValue)
+            {
+                cursor = cursor
+                    .Skip((input.PageNumber - 1) * input.PageSize)
+                    .Limit(input.PageSize);
+            }
 
             if (input.SortType != null)
             {
@@ -53,7 +62,7 @@ namespace PSK.SmartGarden.Data.Repository
 
                         case GetMeasurementListInput.Sort.SoilMoisture:
                             return x => x.SoilMoisture;
-                        
+
                         default:
                             throw new ArgumentOutOfRangeException();
                     }

@@ -2,8 +2,11 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PSK.SmartGarden.Application;
+using PSK.SmartGarden.Dto.Measurement;
 
 namespace PSK.SmartGarden.Controllers
 {
@@ -13,27 +16,28 @@ namespace PSK.SmartGarden.Controllers
     public class MeasurementController : ControllerBase
     {
         private readonly ILogger<MeasurementController> _logger;
+        private readonly IMeasurementService _measurementService;
 
-        public MeasurementController(ILogger<MeasurementController> logger)
+        public MeasurementController(
+            ILogger<MeasurementController> logger,
+            IMeasurementService measurementService)
         {
             _logger = logger;
+            _measurementService = measurementService;
         }
 
         [HttpGet]
-        public IActionResult GetMeasurementList(GetMeasurementListInputDto input)
+        [ProducesResponseType(typeof(GetMeasurementListOutputDto), StatusCodes.Status200OK)]
+        public IActionResult GetMeasurementList([FromQuery] GetMeasurementListInputDto input)
         {
-            var rng = new Random();
-            return Ok(new GetMeasurementListOutputDto
-            {
-                Data = Enumerable.Range(1, 5).Select(index => new GetMeasurementListOutputDto.ListItemDto
-                    {
-                        MeasurementDate = DateTime.Now.AddDays(index),
-                        AirTemperature = rng.Next(10, 30),
-                        AirHumidity = rng.Next(50, 60),
-                        SoilMoisture = rng.Next(80, 98),
-                    })
-                    .ToArray()
-            });
+            if (!ModelState.IsValid)
+            {    
+                return BadRequest();
+            }
+
+            var response = _measurementService.GetMeasurementList(input);
+
+            return Ok(response);
         }
     }
 }

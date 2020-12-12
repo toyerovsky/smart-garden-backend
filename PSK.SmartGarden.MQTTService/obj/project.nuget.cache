@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Wr8oAfQaXDCcOg6DtU6xaw8+h8selwaLhLYEHtO11+LdqP65+ISgTUGRhtluIdreYJFOGbfbhE4+UKiJAwqdWQ==",
+  "dgSpecHash": "ycTrXfM/lzgiblLJaUnKC5aK6hnL1AgPpZsbYvYTcGPhaUE1IF/npCwuNFKrUg/Wr+1NnFVhKPnI8JKG3zMWxQ==",
   "success": true,
   "projectFilePath": "C:\\job\\smart-garden-backend\\PSK.SmartGarden.MQTTService\\PSK.SmartGarden.MQTTService.csproj",
   "expectedPackageFiles": [],

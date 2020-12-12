@@ -6,6 +6,6 @@ namespace PSK.SmartGarden.Data.Repository
 {
     public interface IMeasurementRepository
     {
-        IList<MeasurementEntity> GetMeasurementList(GetMeasurementListInput input);
+        IList<MeasurementEntity> GetMeasurementList(GetMeasurementListInput input, out long totalCount);
     }
 }

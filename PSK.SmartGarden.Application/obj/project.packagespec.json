@@ -36,6 +36,12 @@
   },
   "frameworks": {
     "netcoreapp5.0": {
+      "dependencies": {
+        "AutoMapper": {
+          "target": "Package",
+          "version": "[10.1.1, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",
@@ -51,7 +57,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
     }
   }
 }

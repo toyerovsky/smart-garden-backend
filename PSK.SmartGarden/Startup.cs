@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +13,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using PSK.SmartGarden.Application;
+using PSK.SmartGarden.Application.MapperProfiles;
 using PSK.SmartGarden.Data;
 
 namespace PSK.SmartGarden
@@ -38,6 +41,14 @@ namespace PSK.SmartGarden
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "PSK.SmartGarden", Version = "v1"});
             });
 
+            services.ConfigureApplication();
+            services.ConfigureData();
+
+            services.AddAutoMapper(cfg =>
+            {
+                cfg.AddProfile<MeasurementProfile>();
+            });
+            
             services.AddCors();
         }
 
