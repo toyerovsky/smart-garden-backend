@@ -3,7 +3,7 @@ using PSK.SmartGarden.Dto.Measurement;
 
 namespace PSK.SmartGarden.Application
 {
-    public interface IMeasurementService
+    public interface IMeasurementQueryService
     {
         GetMeasurementListOutputDto GetMeasurementList(GetMeasurementListInputDto input);
     }

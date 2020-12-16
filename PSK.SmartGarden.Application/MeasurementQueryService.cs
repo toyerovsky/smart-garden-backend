@@ -8,12 +8,12 @@ using PSK.SmartGarden.Dto.Measurement;
 
 namespace PSK.SmartGarden.Application
 {
-    class MeasurementService : IMeasurementService
+    class MeasurementQueryService : IMeasurementQueryService
     {
         private readonly IMeasurementRepository _measurementRepository;
         private readonly IMapper _mapper;
 
-        public MeasurementService(
+        public MeasurementQueryService(
             IMeasurementRepository measurementRepository,
             IMapper mapper)
         {

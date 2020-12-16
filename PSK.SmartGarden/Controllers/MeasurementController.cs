@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -16,14 +13,14 @@ namespace PSK.SmartGarden.Controllers
     public class MeasurementController : ControllerBase
     {
         private readonly ILogger<MeasurementController> _logger;
-        private readonly IMeasurementService _measurementService;
+        private readonly IMeasurementQueryService _measurementQueryService;
 
         public MeasurementController(
             ILogger<MeasurementController> logger,
-            IMeasurementService measurementService)
+            IMeasurementQueryService measurementQueryService)
         {
             _logger = logger;
-            _measurementService = measurementService;
+            _measurementQueryService = measurementQueryService;
         }
 
         [HttpGet]
@@ -35,7 +32,7 @@ namespace PSK.SmartGarden.Controllers
                 return BadRequest();
             }
 
-            var response = _measurementService.GetMeasurementList(input);
+            var response = _measurementQueryService.GetMeasurementList(input);
 
             return Ok(response);
         }
