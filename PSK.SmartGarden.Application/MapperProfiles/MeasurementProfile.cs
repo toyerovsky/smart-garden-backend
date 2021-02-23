@@ -10,7 +10,8 @@ namespace PSK.SmartGarden.Application.MapperProfiles
         public MeasurementProfile()
         {
             CreateMap<GetMeasurementListInputDto, GetMeasurementListInput>();
-            CreateMap<MeasurementEntity, GetMeasurementListOutputDto.ListItemDto>();
+            CreateMap<MeasurementEntity, GetMeasurementListOutputDto.ListItemDto>()
+                .ForMember(x => x.Date, opt => opt.MapFrom(x => x.Date.ToLocalTime()));
         }
     }
 }

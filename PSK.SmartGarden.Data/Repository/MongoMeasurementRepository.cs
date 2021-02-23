@@ -77,5 +77,12 @@ namespace PSK.SmartGarden.Data.Repository
 
             return cursor.ToList();
         }
+
+        public string InsertMeasurement(MeasurementEntity measurement)
+        {
+            _measurements.InsertOne(measurement);
+
+            return measurement.Id;
+        }
     }
 }

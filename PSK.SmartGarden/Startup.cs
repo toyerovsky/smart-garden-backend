@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using PSK.SmartGarden.Application;
@@ -34,7 +27,9 @@ namespace PSK.SmartGarden
             services.Configure<GardenDatabaseSettings>(Configuration.GetSection(nameof(GardenDatabaseSettings)));
             services.AddSingleton<IGardenDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<GardenDatabaseSettings>>().Value);
-            
+
+            services.AddSingleton<MqttMeasurementInsertionHandler>();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,11 +39,8 @@ namespace PSK.SmartGarden
             services.ConfigureApplication();
             services.ConfigureData();
 
-            services.AddAutoMapper(cfg =>
-            {
-                cfg.AddProfile<MeasurementProfile>();
-            });
-            
+            services.AddAutoMapper(cfg => { cfg.AddProfile<MeasurementProfile>(); });
+
             services.AddCors();
         }
 
@@ -74,6 +66,9 @@ namespace PSK.SmartGarden
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+            var handler = app.ApplicationServices.GetService<MqttMeasurementInsertionHandler>();
+            handler?.Start();
         }
     }
 }

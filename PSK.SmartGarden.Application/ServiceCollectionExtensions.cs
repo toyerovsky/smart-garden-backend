@@ -7,6 +7,7 @@ namespace PSK.SmartGarden.Application
         public static void ConfigureApplication(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddTransient<IMeasurementQueryService, MeasurementQueryService>();
+            serviceCollection.AddTransient<IMeasurementCommandService, MeasurementCommandService>();
         }
     }
 }
